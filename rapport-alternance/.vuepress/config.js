@@ -6,6 +6,8 @@ const presentationItems = [
 
 const ameliorationItems = [
   { text: 'Améliorations apportés', link: '/ameliorations/' },
+  { text: 'FileAPI', link: '/ameliorations/fileAPI' },
+  { text: 'Finalisations', link: '/ameliorations/finalisations' },
 ]
 
 module.exports = {
