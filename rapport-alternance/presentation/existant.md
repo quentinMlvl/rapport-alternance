@@ -13,7 +13,7 @@ Le projet principal se nomme CartoGIS54 et se compose alors d'une application cl
 Il s'agit d'une application Web monopage, codée en VueJs et disponible librement sur [GitHub](https://github.com/infogeo54/CartoGIS54). 
 
 <div style="text-align:center">
-    <img width="70%" src="../img/appli_ancienne.png">
+    <img width="70%" src="/assets/img/appli_ancienne.png">
     <p>Application CartoGIS54 en octobre 2020</p>
 </div>
 

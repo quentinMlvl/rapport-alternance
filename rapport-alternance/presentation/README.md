@@ -9,7 +9,7 @@ Durant l'année 2020-2021, j'ai intégré la __License Professionnelle Conceptio
 ## Conseil départemental de Meurthe-et-Moselle
 
 <div style="text-align:center">
-    <img src="../img/logo_cd.png" width="20%">
+    <img src="/assets/img/logo_cd.png" width="20%">
     <p>Logo du Département de Meurthe-et-Moselle</p>
 </div>
 
@@ -35,7 +35,7 @@ Les missions du département sont réparties en 3 grands pôles :
 - __Territoires__, pour les autres missions (Infrastructures, Éducation, Tourisme et Écologie, etc.)
 
 <div style="text-align:center">
-    <img src="../img/orga_general.png">
+    <img src="/assets/img/orga_general.png">
     <p>Organigramme général du Cd54 de Juillet 2021</p>
 </div>
 

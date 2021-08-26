@@ -10,7 +10,7 @@ ___D’octobre à décembre___
 Ma première mission a été de faire correspondre l'application à la maquette que mon tuteur m'a donné. Cela m'a permis de parcourir entre les différents composants pour mieux connaître leur rôle et leur fonctionnement.
 
 <div style="text-align:center">
-    <img width="70%" src="../img/maquette_1.png">
+    <img width="70%" src="/assets/img/maquette_1.png">
     <p>Première version de la maquette</p>
 </div>
 
