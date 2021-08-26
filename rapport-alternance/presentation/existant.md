@@ -12,7 +12,7 @@ Le projet principal se nomme CartoGIS54 et se compose alors d'une application cl
 
 Il s'agit d'une application Web monopage, codée en VueJs et disponible librement sur [GitHub](https://github.com/infogeo54/CartoGIS54). 
 
-![ancienne application](../assets/img/appli_ancienne.png)
+![ancienne application](../assets/img/appli_existante.png)
 <p style="text-align:center;">Application CartoGIS54 en octobre 2020</p>
 
 Elle est configurable grâce à un fichier json généré par le plugin QGIS. C'est dans ce fichier qu'est inscrit entre autres le lien vers QGIS Serveur et ainsi que le lien vers le projet QGIS, pour ainsi consumer l'API grâce aux flux WMS et WFS.

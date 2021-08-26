@@ -1,3 +1,4 @@
+
 const presentationItems = [
   { text: 'Présentation', link: '/presentation/' },
   { text: 'Application existante', link: '/presentation/existant' },
@@ -12,6 +13,11 @@ const ameliorationItems = [
 module.exports = {
     title: 'Rapport Alternance',
     description: 'Rapport Alternance SIG 2020/2021',
+    configureWebpack: {
+        resolve: {
+          extensions: ['.jpg', '.png'],
+        }
+    },
     themeConfig: {
         nav: [
             { text: 'Accueil', link: '/' },
