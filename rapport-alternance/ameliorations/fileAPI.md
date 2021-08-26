@@ -126,7 +126,7 @@ __Nouveau Problème__ : En cas d'erreur l'API renvoie une réponse en JSON que j
 
 __Solution__ : La solution a été de détecter le code de réponse HTTP : s’il s'agit d'un code d'erreur alors on crée une URL comme dans la solution précédente et de faire une requête get avec axios vers cette url en mettant ici le responseType à `json`. Nous arrivons ainsi à lire le message d'erreur.
 
-__Code__ : 
+__Code__ 
 ```javascript
 const getFile = async (fileName, layer, isImage = false) => {
     

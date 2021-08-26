@@ -4,10 +4,22 @@ next: /ameliorations/
 ---
 
 # Présentation de l'application existante
+Cette partie reprend le fonctionnement général des applications créées par Hugo, je vous remet un [lien vers son rapport](https://alternance-hugo-jahnke.netlify.app/) si vous voulez plus de détails.
 Le projet principal se nomme CartoGIS54 et se compose alors d'une application cliente et d'un plugin QGIS.
 
 ## L'application cliente
-Il s'agit d'une application Web monopage, codée en VueJs et disponible librement sur [GitHub](https://github.com/infogeo54/CartoGIS54). Elle configurable grâce à un fichier json généré par le plugin QGIS. C'est dans ce fichier qu'est inscrit entre autres le lien vers QGIS Serveur et ainsi que le lien vers le projet QGIS, pour ainsi consumer l'API grâce aux flux WMS et WFS. Cette API permet de récupérer, modifier, ajouter et supprimer des objets géographiques (ou features) dans la base de données PostGIS du serveur.
+
+
+Il s'agit d'une application Web monopage, codée en VueJs et disponible librement sur [GitHub](https://github.com/infogeo54/CartoGIS54). 
+
+<div style="text-align:center">
+    <img width="70%" src="../img/appli_ancienne.png">
+    <p>Application CartoGIS54 en octobre 2020</p>
+</div>
+
+Elle est configurable grâce à un fichier json généré par le plugin QGIS. C'est dans ce fichier qu'est inscrit entre autres le lien vers QGIS Serveur et ainsi que le lien vers le projet QGIS, pour ainsi consumer l'API grâce aux flux WMS et WFS.
+
+ Cette API permet de récupérer, modifier, ajouter et supprimer des objets géographiques (ou features) dans la base de données PostGIS du serveur.
 ::: tip PostGIS
  *PostGIS étant une extension du système de gestion de bases de données PostgreSQL et est spécialisée dans la manipulation d'objets géographiques*
 :::
@@ -35,5 +47,4 @@ L'application CartoGIS54 peut-être configurer grâce au fichier app.config.json
 - Les différents champs du formulaire
 
 Je n'ai pas eu à modifier personnellement ce plugin lors de mon alternance car mes missions se concentraient surtout sur l'application principale. Cependant le SIG a recruté un stagiaire
-, Rodolphe Drouet, pour la Réalisation de plugins pour le système d’information QGIS. Rodolphe a entre autres modifié ce plugin en accord avec les améliorations que j'ai apportée à l'application principale. Si vous souhaitez avoir plus de détails, je vous encourage à aller consulter [son rapport ici](../assets/pdf/Rapport_Stage_Drouet.pdf)
-.
+, Rodolphe Drouet, pour la Réalisation de plugins pour le système d’information QGIS. Rodolphe a entre autres modifié ce plugin en accord avec les améliorations que j'ai apportée à l'application principale. Si vous souhaitez avoir plus de détails, je vous encourage à aller consulter [son rapport ici](https://drive.google.com/file/d/1ecxuKktP6YYPCcpCltc1stMkZT2wNe9M/view?usp=sharing).

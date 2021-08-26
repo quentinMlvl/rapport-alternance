@@ -6,7 +6,7 @@ next: /presentation/
 
 # Rapport d'alternance
 
-Ce site fait office de rapport pour mon année d'apprentissage en alternance au sein du Conseil Départemental de Meurthe et Moselle à Nancy, en tant que Web Développeur au sein du département SIG (Système d'information géographique), lors de ma License Professionnelle CIASIE (Conception-Intégration d'Applications et de Services Web pour les Entreprises) à l'IUT Nancy-Charlemagne.
+Ce site fait office de rapport pour mon année d'apprentissage en alternance au sein du Conseil Départemental de Meurthe-et-Moselle à Nancy, en tant que Développeur Web au sein du SIG, lors de ma LP CIASIE à l'IUT Nancy-Charlemagne.
 
 Mon rôle est de continuer l'application débutée par l'alternant précédant, Hugo Jahnke. Je vous conseille donc vivement de prendre connaissance de son travail en lisant [son rapport ici](https://alternance-hugo-jahnke.netlify.app/).
 

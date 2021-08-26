@@ -1,11 +1,10 @@
 const presentationItems = [
   { text: 'Présentation', link: '/presentation/' },
-  { text: 'Conseil départemental', link: '/presentation/#conseil-departemental-de-meurthe-et-moselle' },
   { text: 'Application existante', link: '/presentation/existant' },
 ]
 
 const ameliorationItems = [
-  { text: 'Améliorations apportés', link: '/ameliorations/' },
+  { text: 'Améliorations apportées', link: '/ameliorations/' },
   { text: 'FileAPI', link: '/ameliorations/fileAPI' },
   { text: 'Finalisations', link: '/ameliorations/finalisations' },
 ]
@@ -30,7 +29,7 @@ module.exports = {
             indexSuffix: '/',
             notFoundPath: '/404.html',
           },
-        ],
+        ]
       ],
   }
 

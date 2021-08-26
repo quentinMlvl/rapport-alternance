@@ -2,7 +2,11 @@
 prev: /ameliorations/fileAPI
 sidebarDepth: 2
 ---
+
+# Finalisations
+
 ___D'avril à août___
+
 Après avoir mis en place fileAPI et l'avoir fait communiquer, il me reste à régler quelques détails et problèmes.
 
 ## Carte 
@@ -11,7 +15,7 @@ Bien que la possibilité de choisir entre plusieurs fonds de cartes Leaflet avai
 
 J'ai donc ajouté dans la partie `map` du fichier de configuration une liste `baseLayers` qui me permet d'ajouter les fonds de cartes que l'on souhaite.
 
-__Code__ : 
+__Code__ 
 ```javascript
 if (layers.length) {
     layers.forEach((layer) => {
@@ -55,7 +59,7 @@ __Problème__ : Tremblement l'affichage
 
 __Solution__ : Zoomer de +1 lors de l'affichage de la carte, le tremblement disparaît.
 
-__Code__ :
+__Code__
 ```javascript
 if (isLimited) map.setMaxBounds(map.getBounds());
 

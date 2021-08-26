@@ -9,10 +9,15 @@ ___D’octobre à décembre___
 ## Remise en forme du CSS
 Ma première mission a été de faire correspondre l'application à la maquette que mon tuteur m'a donné. Cela m'a permis de parcourir entre les différents composants pour mieux connaître leur rôle et leur fonctionnement.
 
-<div style="color:red">img de la maquette</div>
+<div style="text-align:center">
+    <img width="70%" src="../img/maquette_1.png">
+    <p>Première version de la maquette</p>
+</div>
 
 J'ai ainsi utilisé flexbox et grid, et j'ai adapté l'application au format d'écran plus petit comme les mobiles (responsive design), en suivant le wireframe suivant :
+
 <div style="color:red">img du/des wireframe(s)</div>
+
 Nous pouvons voir que le menu des couches en version mobile est un carrousel (ou slider) horizontal. J'ai choisi d'utilisé `Swiperjs`, une librairie de slider compatible avec le mobile et qui propose une personnalisation assez complète.
 
 ## Editable
