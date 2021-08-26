@@ -8,7 +8,7 @@ Durant l'année 2020-2021, j'ai intégré la __License Professionnelle Conceptio
 
 ## Conseil départemental de Meurthe-et-Moselle
 
-![Logo du Département de Meurthe-et-Moselle](../img/logo_cd.png)
+![Logo du Département de Meurthe-et-Moselle](../assets/img/logo_cd.png)
 <p style="text-align:center;">Logo du Département de Meurthe-et-Moselle</p>
 
 <style>
@@ -41,7 +41,7 @@ Les missions du département sont réparties en 3 grands pôles :
 - __Territoires__, pour les autres missions (Infrastructures, Éducation, Tourisme et Écologie, etc.)
 
 
-![Organigramme général du Cd54 de Juillet 2021](../img/orga_general.png)
+![Organigramme général du Cd54 de Juillet 2021](../assets/img/orga_general.png)
 <p style="text-align:center;">Organigramme général du Cd54 de Juillet 2021</p>
 
 Bien que n'apparaissant pas sur le diagramme ci-dessus, le service SIG fait partie de la branche Développement du pôle Territoires. 
