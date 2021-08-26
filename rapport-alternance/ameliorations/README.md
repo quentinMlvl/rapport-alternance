@@ -9,10 +9,8 @@ ___D’octobre à décembre___
 ## Remise en forme du CSS
 Ma première mission a été de faire correspondre l'application à la maquette que mon tuteur m'a donné. Cela m'a permis de parcourir entre les différents composants pour mieux connaître leur rôle et leur fonctionnement.
 
-<div style="text-align:center">
-    <img width="70%" src="/assets/img/maquette_1.png">
-    <p>Première version de la maquette</p>
-</div>
+![maquette](../img/maquette_1.png)
+<p style="text-align:center;">Première version de la maquette</p>
 
 J'ai ainsi utilisé flexbox et grid, et j'ai adapté l'application au format d'écran plus petit comme les mobiles (responsive design), en suivant le wireframe suivant :
 
