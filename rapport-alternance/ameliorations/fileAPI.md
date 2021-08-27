@@ -166,11 +166,13 @@ Voici le rendu final pour les champs de type FileInput ou Thumbnail :
 ![ajout pièce jointe](../assets/img/ajout_pj.png)
 <p style="text-align:center">Ajout d'une pièce jointe avec un input file</p>
 
-![ajout pièce jointe](../assets/img/rendu_pj_et_image.png)
+![rendu final](../assets/img/rendu_pj_et_image.png)
 <p style="text-align:center">Rendu final pour une image et une pièce jointe</p>
 
 <style>
-img {
+img[alt="rendu final"],
+img[alt="ajout pièce jointe"],
+{
     width: 30%;
 }
 </style>
