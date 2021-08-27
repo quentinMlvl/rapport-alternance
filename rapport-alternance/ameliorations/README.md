@@ -56,7 +56,7 @@ __Idée__ : Pouvoir déplacer ou supprimer un point déjà existant ou en ajoute
 __Solution__ : Le plugin [`Leaflet Editable`](https://github.com/Leaflet/Leaflet.Editable)
 
 __Demo du plugin__ :
-<iframe width="100%" style="min-height:30rem;" src="http://leaflet.github.io/Leaflet.Editable/example/index.html"></iframe>
+<iframe width="100%" style="min-height:30rem;" src="https://leaflet.github.io/Leaflet.Editable/example/index.html"></iframe>
 
 __Problème intermédiaire__ : Coordonnées dupliquées
 Lorsque l’on sauvegarde un objet, la première coordonnée est dupliquée ce qui nous fait 2 points se superposant (cela se produisant à chaque sauvegarde). 
