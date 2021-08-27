@@ -160,3 +160,17 @@ const getFile = async (fileName, layer, isImage = false) => {
 __Problème intermédiaire__ : Si on supprime un objet dans l'application, ces fichiers et images restent stockés à jamais dans l'API.
 
 __Solution__ : Créer une méthode `deleteAllFiles` qui permet de supprimer chaque image et chaque fichier associés à un objet avant de le supprimer.
+
+__Rendu__
+Voici le rendu final pour les champs de type FileInput ou Thumbnail :
+![ajout pièce jointe](../assets/img/ajout_pj.png)
+<p style="text-align:center">Ajout d'une pièce jointe avec un input file</p>
+
+![ajout pièce jointe](../assets/img/rendu_pj_et_image.png)
+<p style="text-align:center">Rendu final pour une image et une pièce jointe</p>
+
+<style>
+img {
+    width: 30%;
+}
+</style>
