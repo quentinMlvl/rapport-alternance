@@ -1,5 +1,6 @@
 ---
 prev: /ameliorations/fileAPI
+next: /conclusion/
 sidebarDepth: 2
 ---
 

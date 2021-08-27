@@ -23,6 +23,7 @@ module.exports = {
             { text: 'Accueil', link: '/' },
             { text: 'Présentation', items: presentationItems },
             { text: 'Améliorations', items: ameliorationItems },
+            { text: 'Conclusion', link: '/conclusion/' }
 
         ],
         sidebar: 'auto'

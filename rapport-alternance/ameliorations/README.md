@@ -14,12 +14,38 @@ Ma première mission a été de faire correspondre l'application à la maquette 
 
 J'ai ainsi utilisé flexbox et grid, et j'ai adapté l'application au format d'écran plus petit comme les mobiles (responsive design), en suivant le wireframe suivant :
 
-<div style="color:red">img du/des wireframe(s)</div>
+![wireframe écran large](../assets/img/wireframe_large.png)
+<p style="text-align:center;margin-bottom:4rem">Wireframe pour écran large</p>
+
+![wireframe petit écran](../assets/img/wireframe_petit_ecran.png)
+
+![wireframe petit écran avec formulaire](../assets/img/wireframe_petit_ecran_form.png)
+<p style="text-align:center;">Wireframes pour petit écran</p>
+
+
+<style>
+img{
+    display:block;
+    margin: auto;
+}
+
+img[alt="wireframe écran large"]
+{
+    width: 75%;
+}
+
+img[alt="wireframe petit écran avec formulaire"],
+img[alt="wireframe petit écran"]
+{
+    width: 50%;
+}
+
+</style>
 
 Nous pouvons voir que le menu des couches en version mobile est un carrousel (ou slider) horizontal. J'ai choisi d'utilisé `Swiperjs`, une librairie de slider compatible avec le mobile et qui propose une personnalisation assez complète.
 
 ## Editable
-__Problème :__ Modifier la géométrie d’un polygone
+__Problème__ : Modifier la géométrie d’un polygone
 
 Pour modifier un polygone nous avons 2 choix :
 - Soit cliquer pour ajouter un point à la suite du dernier point posé. Cependant il n'est pas possible de déplacer ou supprimer un point déjà existant ou d’en ajouter un nouveau entre deux déjà existants.
@@ -29,14 +55,17 @@ __Idée__ : Pouvoir déplacer ou supprimer un point déjà existant ou en ajoute
 
 __Solution__ : Le plugin [`Leaflet Editable`](https://github.com/Leaflet/Leaflet.Editable)
 
-__Problème intermédiaire :__ Coordonnées dupliquées
+__Demo du plugin__ :
+<iframe width="100%" style="min-height:30rem;" src="http://leaflet.github.io/Leaflet.Editable/example/index.html"></iframe>
+
+__Problème intermédiaire__ : Coordonnées dupliquées
 Lorsque l’on sauvegarde un objet, la première coordonnée est dupliquée ce qui nous fait 2 points se superposant (cela se produisant à chaque sauvegarde). 
 
 PostGIS considère en polygone valide que si la première coordonnée est identique à la dernière (pour pouvoir refermer la forme), contrairement Leaflet qui n’ayant pas besoin de ce doublon le considère comme un autre point. 
 
 L’astuce de Hugo était donc de dupliquer cette coordonnée avant de l’envoyer dans la BDD PostGIS. Cependant en recevoir les informations de la BDD, on récupérait le doublon. 
 
-__Solution :__ Retirer le doublon
+__Solution__ : Retirer le doublon
 ```javascript
 get coordinates () {
     let g = this.properties.geometry;
@@ -77,6 +106,9 @@ Suite à une réunion avec Mme Arts, la directrice du Pôle Développement, pour
 ### Implémentation des outils de mesures
 #### Affichage des mesures
 Pour l’affichage des mesures sur les objets j’ai utilisé le plugin [`Leaflet Measure Path`](https://github.com/ProminentEdge/leaflet-measure-path) en modifiant l’affichage pour des raisons de lisibilité. 
+
+__Demo du plugin__ :
+<iframe width="100%" style="min-height:30rem;" src="https://prominentedge.com/leaflet-measure-path/"></iframe>
 
 #### Mesure rapide
 Pour les outils de mesures rapides, j’ai créé un nouveau module dans le store de VueJs nommé `quickMeasure` qui stocke l’objet Leaflet en construction, les méthodes pour ajouter, modifier et supprimer les sommets de l’objet ainsi que le type d’objet qui est initialisé par ce bouton Image du bouton. Les mesures sont affichées avec le plugin `Leaflet Measure Path` et l’objet est modifiable grâce au plugin `Editable`.
