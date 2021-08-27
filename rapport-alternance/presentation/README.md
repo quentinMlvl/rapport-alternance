@@ -4,9 +4,9 @@ next: /presentation/existant
 sidebarDepth: 2
 ---
 # Présentation
-Durant l'année 2020-2021, j'ai intégré la __License Professionnelle Conception-Intégration d'Applications et Services Web pour l'Entreprise__ (LP CIAISE) de l'IUT Nancy-Charlemagne, formation professionnalisante dans le domaine du développement Web, la création d'applications et de sites Web
+Durant l'année 2020-2021, j'ai intégré la __Licence Professionnelle Conception-Intégration d'Applications et Services Web pour l'Entreprise__ (LP CIAISE) de l'IUT Nancy-Charlemagne, formation professionnalisante dans le domaine du développement Web, la création d'applications et de sites Web. 
 
-. J'ai eu l'occasion d'effectuer cette année d'étude en alternance au sein du __Système d'Information Géographique__ (SIG) du __Conseil Départementale de Meurthe-et-Moselle__ (CD54).
+J'ai eu l'occasion d'effectuer cette année d'étude en alternance au sein du __Système d'Information Géographique__ (SIG) du __Conseil Départementale de Meurthe-et-Moselle__ (CD54).
 
 ## Conseil départemental de Meurthe-et-Moselle
 
@@ -29,13 +29,13 @@ Ses missions diverses concernent l'ensemble du territoire du département sur pr
 - La solidarité envers l'enfance et la famille, les personnes en difficulté sociale, les personnes âgées, les personnes en situation de handicap.
 - Le social avec la gestion du RSA et de certaines allocations,
 - La gestion et l'entretien des routes départementales, de grandes infrastructures comme les aérodromes et les ports, etc.
-- L'éducation avec la gestion et l'entretien des collèges, et le soutien aux universités, et le transport des élèves (de maternelle à lycée),
+- L'éducation avec la gestion et l'entretien des collèges, et le soutien aux universités, et le transport des élèves (de la maternelle au lycée),
 - L'économie et l'agriculture avec l'attractivité du territoire, du soutien à l'emploi, des laboratoires vétérinaires et alimentaires,
 - La protection et la valorisation de la culture et du patrimoine, ainsi que le tourisme
 - L'environnement avec l'eau et l'assainissement, sentiers de randonnées et la protection des espaces naturels.
 
 ### Organisation du Cd54
-Suite aux élections départementales de 2021 des conseillers départementaux, ces derniers ont élu [__Chaynesse Khirouni__](http://meurthe-et-moselle.fr/departement/la-pr%C3%A9sidente), nouvelle présidente du Conseil départemental de Meurthe-et-Moselle, qui à succède __Valérie Beausert-Leick__.
+Suite aux élections départementales de 2021 des conseillers départementaux, ces derniers ont élu [__Chaynesse Khirouni__](http://meurthe-et-moselle.fr/departement/la-pr%C3%A9sidente), nouvelle présidente du Conseil départemental de Meurthe-et-Moselle, qui a succédé __Valérie Beausert-Leick__.
 
 Les missions du département sont réparties en 3 grands pôles : 
 - __Solidarités__, regroupant les actions sociales et solidaires
@@ -65,7 +65,7 @@ Les objets géographiques comprennent tous les objets, infrastructures, zones na
 
 La seconde mission du SIG est de restituer ces informations sous forme de cartes pour les clients du SIG, des externes comme des collectivités et mairies ou d'autres services du département, comme par exemple le service gérant l'assainissement des eaux qui aimerait avoir une cartographie des installations souterraines afin de pouvoir intervenir le plus efficacement possible.
 
-Ces cartes peuvent servir à conseiller et guider les clients dans leurs projets. Prenons l'exemple d'un maire qui veut construire un complexe sportif d'un côté de sa ville, le SIG pourra lui conseiller en lui signalant qu'un autre gymnase est à moins d'1 km et proposera de le mettre plutôt de l'autre côté de la ville. Autre exemple où un maire veut faire construire un parc/jardin public, le SIG pourra le conseiller de le déplacer car trop proche d'une station d'épuration ou d'une zone industrielle, ce qui pourrait déranger les futurs visiteurs du parc.
+Ces cartes peuvent servir à conseiller et guider les clients dans leurs projets. Prenons l'exemple d'un maire qui veut construire un complexe sportif d'un côté de sa ville, le SIG pourra le conseiller en lui signalant qu'un autre gymnase est à moins d'1 km et proposera de le mettre plutôt de l'autre côté de la ville. Autre exemple où un maire veut faire construire un parc/jardin public, le SIG pourra le conseiller de le déplacer car trop proche d'une station d'épuration ou d'une zone industrielle, ce qui pourrait déranger les futurs visiteurs du parc.
 
 ### L'importance de l'informatique
 Au vu de la diversité de projets, de types d'objets, de la provenance de ces objets et de la multiplicité des acteurs, l'informatique a permis au SIG de :
