@@ -7,7 +7,7 @@ sidebarDepth: 2
 # Améliorations apportées
 ___D’octobre à décembre___
 ## Remise en forme du CSS
-Ma première mission a été de faire correspondre l'application à la maquette que mon tuteur m'a donné. Cela m'a permis de parcourir entre les différents composants pour mieux connaître leur rôle et leur fonctionnement.
+Ma première mission a été de faire correspondre l'application à la maquette que mon tuteur m'a donnée. Cela m'a permis de parcourir entre les différents composants pour mieux connaître leur rôle et leur fonctionnement.
 
 ![maquette](../assets/img/maquette_1.png)
 <p style="text-align:center;">Première version de la maquette</p>
@@ -89,17 +89,17 @@ get coordinates () {
 ## Ligne brisée (Polyline)
 L’application ne prenait en compte que les objets de type point (marker) et polygone.
 
-L’implémentation de lignes brisés pour par exemple des routes ou des lignes électriques ou internet était indispensable. Je me suis basé sur ce qui avait été déjà fait pour les polygones et je l'ai adapté aux polylignes que ce soit du côté Leaflet ou pour la structure de la requête vers PostGIS.
+L’implémentation de lignes brisées pour par exemple des routes ou des lignes électriques ou internet était indispensable. Je me suis basé sur ce qui avait été déjà fait pour les polygones et je l'ai adapté aux polylignes que ce soit du côté Leaflet que pour la structure de la requête vers PostGIS.
 
 Je vais me permettre le néologisme `polyligne` à partir de l’anglais `polyline` (à l'instar de _polygon_ pour  _polygone_) pour désigner les lignes brisées.
 
 ## Outils de mesures
-Suite à une réunion avec Mme Arts, la directrice du Pôle Développement, pour lui montrer les avancées de l’application, grâce à son point de vue plus global du projet, elle nous avait proposé de nouvelles fonctionnalités : 
+Lors d'une réunion de présentation des avancées de l'application avec Mme Arts, cette dernière a donnée son point de vue plus global du projet, et nous a proposé de nouvelles fonctionnalités : 
 - La possibilité de sélectionner différents fonds de carte (par exemple : vue satellite ou vue de plan),
 - Des outils pour pouvoir mesurer des périmètres, distances ou surfaces.
 
 ### Description des différentes fonctionnalités de mesures
--	Affichage sur les polygones leur aire et périmètre et sur les polylignes la distance totale.
+-	Affichage sur les polygones, leur aire et périmètre et sur les polylignes, la distance totale.
 -	Mesure rapide/à la volée de distances ou de surfaces (sans créer un objet dans la BDD).
 -	Remplissage automatique des champs d'`aire` et de `périmètre` (pour les polygones) et du champ de `distance` (pour les polylignes).
 
@@ -119,7 +119,7 @@ Pour le remplissage automatique des champs, la méthode updateMeasurements est a
 
 -	Le périmètre est calculé grâce aux méthodes `accumulatedLengths` et `length` du plugin [`Leaflet.GeometryUtil`](https://github.com/makinacorpus/Leaflet.GeometryUtil)
 -	L’aire est calculée grâce à la méthode `geodesicArea` du plugin [`Leaflet.Draw`](https://github.com/Leaflet/Leaflet.draw)
--	La distance totale est calculé grâce à `length` du plugin `Leaflet.GeometryUtil`
+-	La distance totale est calculée grâce à `length` du plugin `Leaflet.GeometryUtil`
 
 ```javascript
 /*
@@ -136,7 +136,7 @@ updateMeasurements () {
 ```
 <div id="updateByRole">
 
-Dans la méthode `_updateByRole` ci-dessous, on recherche dans le fichier de configuration, les champs `NotEnterable` (cf. [`ajout de types de champs`](#ajout-de-types-de-champ)) de la couche de l'objet.
+Dans la méthode `_updateByRole` ci-dessous, on recherche, dans le fichier de configuration, les champs `NotEnterable` (cf. [`ajout de types de champs`](#ajout-de-types-de-champ)) de la couche de l'objet.
 On regarde ceux qui ont un attribut `rôle` qui correspond au rôle du champ. Pour l'instant il existe 3 rôles :
 - `area` pour le calcul d'aire et de surface, 
 - `perimetre` pour le calcul de périmètre, 
@@ -207,12 +207,12 @@ get distance (){
 ```
 ## Configuration du formulaire
 
-Afin de mettre en forme de manière plus avancée le formulaire ou fiche descriptive, j'ai ajouté de nouveaux types de champs dans le formulaire et ajouté de nouveaux attributs aux types déjà existant.
+Afin de mettre en forme de manière plus avancée le formulaire ou fiche descriptive, j'ai ajouté de nouveaux types de champs dans le formulaire et ajouté de nouveaux attributs aux types déjà existants.
 
 ### NotEnterable 
-`NotEnterable` (pour non saisissable) concerne tous les champs qui peuvent être affichés mais qui ne doivent pas être saisi par les utilisateurs.
+`NotEnterable` (pour non saisissable) concerne tous les champs qui peuvent être affichés mais qui ne doivent pas être saisis par les utilisateurs.
 
-Il peut s’agir par exemple de l’identifiant de l’objet mais aussi et surtout des champs aire, périmètre, longueur que j’ai mentionné dans la partie [`Outils de Mesure`](#outils-de-mesures) qui doivent être modifiés lors d'un changement dans la géométrie de l’objet et non directement dans le formulaire. 
+Il peut s’agir par exemple de l’identifiant de l’objet mais aussi et surtout des champs aire, périmètre, longueur que j’ai mentionnés dans la partie [`Outils de Mesure`](#outils-de-mesures) qui doivent être modifiés lors d'un changement dans la géométrie de l’objet et non directement dans le formulaire. 
 
 Dans la configuration du champ il est possible d’ajouter l’unité du champ avec l'attribut `unit` (mètres, ou mètre carré, pour le moment), ce qui permet de l’afficher et même de pouvoir convertir les valeurs (m en km ; m² en ha, puis en km²), comme ceci :
 
@@ -243,7 +243,7 @@ switch (this.field.unit) {
 return a;
 ```
 
-Comme préciser dans la partie sur les outils de mesures (cf. [ `updateByRole`](#updateByRole)), un attribut `role` est optionnel et permet de définir le rôle de champ parmi ceux prédéfinis. 
+Comme précisé dans la partie sur les outils de mesures (cf. [ `updateByRole`](#updateByRole)), un attribut `role` est optionnel et permet de définir le rôle de champ parmi ceux prédéfinis. 
 
 ### File et Thumbnail
 Le champ Thumbnail permet l’affichage d’une image et le champ File le téléchargement d’un fichier.
@@ -257,7 +257,7 @@ Deux options s’offrent à moi :
 - ou le stockage dans un dossier local.
 
 Après des recherches et après en avoir discuté avec mes collègues, j’arrive à un dilemme : 
-- D'un côté, le stockage en BDD pose des problèmes de sécurité, de performances et de capacité de stockages car il s'agit de fichiers binaires assez lourd de type `Blob` (comparé à des champs `text` ou `int`). 
-- De l'autre, étant donné que l'application est en `VueJs` et que `JavaScript` ne permet pas la modification des fichiers et de dossiers en local pour (encore une fois), des problèmes de sécurité, je suis aussi bloqué même si cette solution est privilégiée par mes collègues.
+- D'un côté, le stockage en BDD pose des problèmes de sécurité, de performances et de capacité de stockages car il s'agit de fichiers binaires assez lourd sde type `Blob` (comparé à des champs `text` ou `int`). 
+- De l'autre, étant donné que l'application est en `VueJs` et que `JavaScript` ne permet pas la modification des fichiers et de dossiers en local pour (encore une fois) des problèmes de sécurité, je suis aussi bloqué même si cette solution est privilégiée par mes collègues.
 
 En continuant mes recherches je découvre le module `fs` (pour file-system) de `NodeJS`, qui permet la gestion de fichiers et dossiers à partir d’une application `Node`, puis je fais la connaissance d’`Express`, un Framework d’API pour NodeJS. Je décide donc de créer une API REST qui stocke les fichiers et images dans une arborescence précise de dossiers, avec laquelle l'application CartoGIS54 pourra communiquer.

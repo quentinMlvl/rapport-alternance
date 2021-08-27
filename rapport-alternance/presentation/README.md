@@ -4,7 +4,9 @@ next: /presentation/existant
 sidebarDepth: 2
 ---
 # Présentation
-Durant l'année 2020-2021, j'ai intégré la __License Professionnelle Conception-Intégration d'Applications et Services Web pour l'Entreprise__ (LP CIAISE) de l'IUT Nancy-Charlemagne, formation professionnalisante dans le domaine du développement Web, la création d'applications et de sites Web. J'ai eu l'occasion d'effectuer cette année en alternance au sein du __Système d'Information Géographique__ (SIG) du __Conseil Départementale de Meurthe-et-Moselle__ (Cd54).
+Durant l'année 2020-2021, j'ai intégré la __License Professionnelle Conception-Intégration d'Applications et Services Web pour l'Entreprise__ (LP CIAISE) de l'IUT Nancy-Charlemagne, formation professionnalisante dans le domaine du développement Web, la création d'applications et de sites Web
+
+. J'ai eu l'occasion d'effectuer cette année d'étude en alternance au sein du __Système d'Information Géographique__ (SIG) du __Conseil Départementale de Meurthe-et-Moselle__ (CD54).
 
 ## Conseil départemental de Meurthe-et-Moselle
 
@@ -33,7 +35,7 @@ Ses missions diverses concernent l'ensemble du territoire du département sur pr
 - L'environnement avec l'eau et l'assainissement, sentiers de randonnées et la protection des espaces naturels.
 
 ### Organisation du Cd54
-Suite aux élections départementales de 2021 des conseillers départementaux, ces derniers ont élus [__Chaynesse Khirouni__](http://meurthe-et-moselle.fr/departement/la-pr%C3%A9sidente), nouvelle présidente du Conseil départemental de Meurthe-et-Moselle, qui succède __Valérie Beausert-Leick__.
+Suite aux élections départementales de 2021 des conseillers départementaux, ces derniers ont élu [__Chaynesse Khirouni__](http://meurthe-et-moselle.fr/departement/la-pr%C3%A9sidente), nouvelle présidente du Conseil départemental de Meurthe-et-Moselle, qui à succède __Valérie Beausert-Leick__.
 
 Les missions du département sont réparties en 3 grands pôles : 
 - __Solidarités__, regroupant les actions sociales et solidaires
@@ -46,7 +48,7 @@ Les missions du département sont réparties en 3 grands pôles :
 
 Bien que n'apparaissant pas sur le diagramme ci-dessus, le service SIG fait partie de la branche Développement du pôle Territoires. 
 
-__Julien Barthe__ a pris le poste le directeur général adjoint du pôle Territoires au cours de l'année 2021 et la branche Développement est dirigé par __Isabelle Arts__. 
+__Julien Barthe__ a pris le poste le directeur général adjoint du pôle Territoires au cours de l'année 2021 et la branche Développement est dirigée par __Isabelle Arts__. 
 
 ### Le service SIG
 #### Composition
@@ -57,24 +59,24 @@ __Julien Barthe__ a pris le poste le directeur général adjoint du pôle Territ
 #### Rôles et missions
 Le Système d'information géographique a pour mission de collecter et stocker les objets géographiques du département.
 
-Ces objets peuvent provenir des maires et des mairies, d'institutions publiques ou privées, de collectivités, ... : toutes personnes pouvant renseigner ce genre de données. 
+Ces objets peuvent provenir des maires et des mairies, d'institutions publiques ou privées, de collectivités, ... toutes personnes pouvant renseigner ce genre de données. 
 
-Les objets géographiques comprennent tous les objets, infrastructures, zones naturelles ou non. Cela concerne entre autres les routes et chemins, ronds-points, lignes électriques et fibres, parkings, terrains de sports et gymnases, commerces, hôpitaux, écoles, parcs et forêts et même les bouches à incendie, les bancs publics ou bien les zones de reproduction d'une certaine espèce de papillons : il s'agit de toutes informations pouvant être amener à être cartographier.
+Les objets géographiques comprennent tous les objets, infrastructures, zones naturelles ou non. Cela concerne entre autres les routes et chemins, ronds-points, lignes électriques et fibres, parkings, terrains de sports et gymnases, commerces, hôpitaux, écoles, parcs et forêts et même les bouches à incendie, les bancs publics ou bien les zones de reproduction d'une certaine espèce de papillons : il s'agit de toutes informations pouvant être amenées à être cartographiées.
 
-La seconde mission du SIG est de restituer ces informations sous forme de cartes pour les clients du SIG, des externes comme des collectivités et mairies ou d'autres services du département, comme par exemple le service gérant l'assainissement des eaux qui aimerait avoir une cartographie des installations sous-terraines afin de pouvoir intervenir le plus efficacement possible.
+La seconde mission du SIG est de restituer ces informations sous forme de cartes pour les clients du SIG, des externes comme des collectivités et mairies ou d'autres services du département, comme par exemple le service gérant l'assainissement des eaux qui aimerait avoir une cartographie des installations souterraines afin de pouvoir intervenir le plus efficacement possible.
 
-Ces cartes peuvent servir à conseiller et guider les clients dans leurs projets. Prenons l'exemple d'un maire qui veuille construire un complexe sportif d'un côté de sa ville, le SIG pourra lui conseiller en lui signalant qu'un autre gymnase est à moins d'1 km et proposera de le mettre plutôt de l'autre côté de la ville. Autre exemple où un maire veut faire construire un parc/jardin public, le SIG pourra le conseiller de le déplacer car trop proche d'une station d'épuration ou d'une zone industrielle, ce qui pourrait déranger les futurs visiteurs du parc.
+Ces cartes peuvent servir à conseiller et guider les clients dans leurs projets. Prenons l'exemple d'un maire qui veut construire un complexe sportif d'un côté de sa ville, le SIG pourra lui conseiller en lui signalant qu'un autre gymnase est à moins d'1 km et proposera de le mettre plutôt de l'autre côté de la ville. Autre exemple où un maire veut faire construire un parc/jardin public, le SIG pourra le conseiller de le déplacer car trop proche d'une station d'épuration ou d'une zone industrielle, ce qui pourrait déranger les futurs visiteurs du parc.
 
 ### L'importance de l'informatique
-Au vu de la diversité de projet, de types d'objets, de la provenance de ces objets et de la multiplicité des acteurs, l'informatique a permis au SIG de :
-- Stocker en base de données les objets, tout en uniformisant le format de chaque objet (indépendamment de son origine). Avant les objets pouvaient être renseignées au SIG par mail, sous forme de tableau (xls, odp, csv), dans un fichier texte etc., ce qui ne facilite pas le travail d'analyse,
+Au vu de la diversité de projets, de types d'objets, de la provenance de ces objets et de la multiplicité des acteurs, l'informatique a permis au SIG de :
+- Stocker en base de données les objets, tout en uniformisant le format de chaque objet (indépendamment de son origine). Auparavant les objets pouvaient être renseignés au SIG par mail, sous forme de tableau (xls, odp, csv), dans un fichier texte etc., ce qui ne facilite pas le travail d'analyse,
 - Créer des applications et d'outils facilitant la restitution, l'insertion et la modification d'objets.
 
 ### Le projet Bourg-centre
 Le projet Bourg-centre a pour but la revitalisation des bourgs-centres. En effet, de nos jours, les grandes villes attirent toutes les activités, au péril des plus petites villes qui se dévitalisent dans un cercle vicieux : 
-Moins d'entreprise, moins d'habitants, moins de commerces, d'écoles et de services comme des centres hospitaliers, ce qui implique moins d'attractivité pour l'installation futurs entreprises. 
+moins d'entreprise, moins d'habitants, moins de commerces, d'écoles et de services comme des centres hospitaliers, ce qui implique moins d'attractivité pour l'installation futures entreprises. 
 
-Le but de ce projet est ainsi de redynamiser le centre de communes candidates, grâce à par exemple l'accès au Très Haut Débit, une aide pour les services de santé et les petits commerces. 
+Le but de ce projet est ainsi de redynamiser le centre de communes candidates, grâce à, par exemple, l'accès au Très Haut Débit, une aide pour les services de santé et les petits commerces. 
 
 Le rôle de SIG dans ce projet est de récupérer toutes les infrastructures des communes concernées afin de pouvoir au mieux analyser leur situation actuelle et proposer des solutions adaptées.
 
