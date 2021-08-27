@@ -34,7 +34,7 @@ Ses missions diverses concernent l'ensemble du territoire du département sur pr
 - La protection et la valorisation de la culture et du patrimoine, ainsi que le tourisme
 - L'environnement avec l'eau et l'assainissement, sentiers de randonnées et la protection des espaces naturels.
 
-### Organisation du Cd54
+### Organisation du CD54
 Suite aux élections départementales de 2021 des conseillers départementaux, ces derniers ont élu [__Chaynesse Khirouni__](http://meurthe-et-moselle.fr/departement/la-pr%C3%A9sidente), nouvelle présidente du Conseil départemental de Meurthe-et-Moselle, qui a succédé __Valérie Beausert-Leick__.
 
 Les missions du département sont réparties en 3 grands pôles : 
@@ -43,8 +43,8 @@ Les missions du département sont réparties en 3 grands pôles :
 - __Territoires__, pour les autres missions (Infrastructures, Éducation, Tourisme et Écologie, etc.)
 
 
-![Organigramme général du Cd54 de Juillet 2021](../assets/img/orga_general.png)
-<p style="text-align:center;">Organigramme général du Cd54 de Juillet 2021</p>
+![Organigramme général du CD54 de Juillet 2021](../assets/img/orga_general.png)
+<p style="text-align:center;">Organigramme général du CD54 de Juillet 2021</p>
 
 Bien que n'apparaissant pas sur le diagramme ci-dessus, le service SIG fait partie de la branche Développement du pôle Territoires. 
 
@@ -74,7 +74,7 @@ Au vu de la diversité de projets, de types d'objets, de la provenance de ces ob
 
 ### Le projet Bourg-centre
 Le projet Bourg-centre a pour but la revitalisation des bourgs-centres. En effet, de nos jours, les grandes villes attirent toutes les activités, au péril des plus petites villes qui se dévitalisent dans un cercle vicieux : 
-moins d'entreprise, moins d'habitants, moins de commerces, d'écoles et de services comme des centres hospitaliers, ce qui implique moins d'attractivité pour l'installation futures entreprises. 
+moins d'entreprise, moins d'habitants, moins de commerces, d'écoles et de services comme des centres hospitaliers, ce qui implique moins d'attractivité pour l'installation de futures entreprises. 
 
 Le but de ce projet est ainsi de redynamiser le centre de communes candidates, grâce à, par exemple, l'accès au Très Haut Débit, une aide pour les services de santé et les petits commerces. 
 

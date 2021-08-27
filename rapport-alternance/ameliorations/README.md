@@ -7,7 +7,7 @@ sidebarDepth: 2
 # Améliorations apportées
 ___D’octobre à décembre___
 ## Remise en forme du CSS
-Ma première mission a été de faire correspondre l'application à la maquette que mon tuteur m'a donnée. Cela m'a permis de parcourir entre les différents composants pour mieux connaître leur rôle et leur fonctionnement.
+Ma première mission a été de faire correspondre l'application à la maquette que mon tuteur m'a donnée. Cela m'a permis de parcourir les différents composants pour mieux connaître leur rôle et leur fonctionnement.
 
 ![maquette](../assets/img/maquette_1.png)
 <p style="text-align:center;">Première version de la maquette</p>
@@ -64,7 +64,7 @@ Lorsque l’on sauvegarde un objet, la première coordonnée est dupliquée ce q
 
 PostGIS considère en polygone valide que si la première coordonnée est identique à la dernière (pour pouvoir refermer la forme), contrairement Leaflet qui n’ayant pas besoin de ce doublon le considère comme un autre point. 
 
-L’astuce de Hugo était donc de dupliquer cette coordonnée avant de l’envoyer dans la BDD PostGIS. Cependant en recevoir les informations de la BDD, on récupérait le doublon. 
+L’astuce de Hugo était donc de dupliquer cette coordonnée avant de l’envoyer dans la BDD PostGIS. Cependant en recevant les informations de la BDD, on récupérait le doublon. 
 
 __Solution__ : Retirer le doublon
 ```javascript
@@ -95,7 +95,7 @@ L’implémentation de lignes brisées pour, par exemple des routes ou des ligne
 Je vais me permettre le néologisme `polyligne` à partir de l’anglais `polyline` (à l'instar de _polygon_ pour  _polygone_) pour désigner les lignes brisées.
 
 ## Outils de mesures
-Lors d'une réunion de présentation des avancées de l'application avec Mme Arts, cette dernière a donnée son point de vue plus global du projet, et nous a proposé de nouvelles fonctionnalités : 
+Lors d'une réunion de présentation des avancées de l'application avec Mme Arts, cette dernière a donné son point de vue plus global du projet, et nous a proposé de nouvelles fonctionnalités : 
 - La possibilité de sélectionner différents fonds de carte (par exemple : vue satellite ou vue de plan),
 - Des outils pour pouvoir mesurer des périmètres, distances ou surfaces.
 
@@ -150,7 +150,7 @@ On regarde ceux qui ont un attribut `rôle` qui correspond au rôle du champ. Po
 - `distance` pour le calcul de distance ou de longueur. 
 
 </div>
-Puis on appelle le getter correspond au rôle sur l'attribut de la fiche descriptive auquel le rôle a été assigné.
+Puis on appelle le getter correspondand au rôle sur l'attribut de la fiche descriptive auquel le rôle a été assigné.
 
 ```javascript
 _updateByRole(role){
@@ -263,7 +263,7 @@ Deux options s’offrent à moi :
 - le stockage en BDD 
 - ou le stockage dans un dossier local.
 
-Après des recherches et après en avoir discuté avec mes collègues, j’arrive à un dilemme : 
+Après des recherches et après en avoir discuté avec mes collègues, je fais face au dilemne suivant : 
 - D'un côté, le stockage en BDD pose des problèmes de sécurité, de performances et de capacité de stockage car il s'agit de fichiers binaires assez lourds de type `Blob` (comparé à des champs `text` ou `int`). 
 - De l'autre, étant donné que l'application est en `VueJs` et que `JavaScript` ne permet pas la modification des fichiers et de dossiers en local pour (encore une fois) des problèmes de sécurité, je suis aussi bloqué même si cette solution est privilégiée par mes collègues.
 
