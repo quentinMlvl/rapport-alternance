@@ -50,13 +50,14 @@ L.control.layers(baseLayers).addTo(map);
 ```
 
 ### Limiter le déplacement
-J'ai ajouté la possibilité de ne pas pouvoir se déplacer au-delà de notre emprise (= zone visible sur notre carte, qui peut être un bourg en particulier, le département, la France ou bien le monde entier). Cette emprise est définie par 3 paramètres dans le fichier de configuration :
+J'ai ajouté la possibilité de ne pas pouvoir se déplacer au-delà de notre emprise (= zone visible sur notre carte, qui peut être une commune en particulier, le département, la France ou bien le monde entier). Cette emprise est définie par 3 paramètres dans le fichier de configuration :
 - `x` : la latitude du centre de la carte,
 - `y` : la longitude du centre de la carte,
-- `minZoom` : le zoom minimum sur la carte ( valeur à laquelle on ne peut plus dézoomer).
+- `minZoom` : le zoom minimum sur la carte (valeur à laquelle on ne peut plus dézoomer).
+
 J'y ai ajouté le paramètre `isLimited` qui est un booléen qui permet de bloquer la carte à l'emprise ou bien de permettre de se déplacer librement autour.
 
-__Problème__ : Tremblement l'affichage
+__Problème__ : Tremblement de l'affichage
 
 __Solution__ : Zoomer de +1 lors de l'affichage de la carte, le tremblement disparaît.
 
@@ -68,7 +69,7 @@ map.setZoom(minZoom+1)
 ```
 
 ### Paramètres dans l'URL
-J'ai eu l'idée de permettre de changer l'emprise de la carte directement dans l'application en ajoutant des paramètres dans l'URL. Ce sont les 4 paramètres cités précédemment, dont les valeurs par défaut sont définis dans le fichier de configuration.
+J'ai eu l'idée de permettre de changer l'emprise de la carte directement dans l'application en ajoutant des paramètres dans l'URL. Ce sont les 4 paramètres cités précédemment, dont les valeurs par défaut sont définies dans le fichier de configuration.
 
 Par exemple :
 - `myCartoGIS.app/?x=50&y=50&minZoom=10&isLimited=false`
@@ -101,7 +102,7 @@ centerOnFeature (f) {
 ## Page 404
 J'ai créé grâce au router de VueJS, une page 404 pour que l'utilisateur reste sur la page principale de l'application.
 
-Le router était aussi nécessaire pour récupérer les paramètres dans l'URL
+Le router était aussi nécessaire pour récupérer les paramètres dans l'URL.
 
 ## Personnalisation du rendu des objets
 Les objets QGIS peuvent avoir une représentation personnalisée (couleur, épaisseur du trait, ... pour les polygones et polylignes et marqueurs pour les points). Ces informations étant passées à l'application, j'ai pu personnaliser le rendu de chacun des objets.
@@ -109,9 +110,9 @@ Les objets QGIS peuvent avoir une représentation personnalisée (couleur, épai
 ## Gestion des types d'objets
 Lorsque Hugo a créé l'application, le webservice comprenait des objets de type `Point` ou `MultiPolygon`. 
 
-Puis lors de l'ajout des lignes brisés, nous avons ajouté une couche de linéaires qui utilisait des `MultiPolyline`.
+Puis lors de l'ajout des lignes brisées, nous avons ajouté une couche de linéaires qui utilisait des `MultiPolyline`.
 
-Cependant lors d'un test permettant de voir si l'application s'adapte à un nouveau projet, nous nous sommes rendu compte que ce projet utilisait des `MultiPoint`, des `Polygon` et des `Polyline`, ce qui bloquait l'application.
+Cependant lors d'un test permettant de voir si l'application s'adapte à un nouveau projet, nous nous sommes rendus compte que ce projet utilisait des `MultiPoint`, des `Polygon` et des `Polyline`, ce qui bloquait l'application.
 
 Étant donné que ces types sont définis en base de données, il est impensable d'imposer l'utilisation des formes "simples" à la place des formes "multi" car cela impliquerait de devoir modifier la structure de chaque objet de chacune des couches concernées. Il faut donc que l'application gère ces 6 types.
 
@@ -146,7 +147,7 @@ get type () {
 ## Design
 J'ai dû améliorer le design général de l'application :
 - Possibilité d'enlever le header avec un paramètre, `hasHeader` dans le fichier de configuration
-- Uniformisations des boutons sur la carte, avec la création d'icônes,
+- Uniformisation des boutons sur la carte, avec la création d'icônes,
 - Ajout d'un slider pour la liste des types d'objets d'une couche. Ce slider est similaire à celui utilisé pour la liste des couches.
 
 
@@ -166,31 +167,29 @@ Lors de l'insertion de CartoGIS54 en iframe, j'ai eu des erreurs d'en-tête. J'a
 Pour éviter un problème de Mixed-Content (appels de fichiers depuis un serveur en HTTP depuis un site en HTTPS, ce qui est bloqué par tous les navigateurs actuels), nous avons dû passer CartoGIS54 en HTTPS ainsi que le webservice et le fileAPI.
 
 
-## Documentation et future des applications
-Étant donné que l'application doit être open-source et que je ne m'en occuperai plus l'année prochaine, il me faut documenter le plus possible l'application afin de faciliter la compréhension des futures personnes travaillant sur cette application.
+## Documentation et futur des applications
+Étant donné que l'application doit être open-source et que je ne m'en occuperai plus l'année prochaine, il me faut la documenter le plus possible afin de faciliter la compréhension des futures personnes travaillant sur cette application.
 
 ### Ajout Jsdoc et README.md
 ::: tip JsDoc
-JsDoc permet de documenter les fonctions, objets et modules JavaScript et TypeScript. Certains éditeurs de code peuvent utilisés la documentation JsDoc pour afficher des aides pour la saisie, la compréhension du rôle d'une fonction par exemple.
+JsDoc permet de documenter les fonctions, objets et modules JavaScript et TypeScript. Certains éditeurs de code peuvent utiliser la documentation JsDoc pour afficher des aides pour la saisie et la compréhension du rôle d'une fonction par exemple.
 :::
 
 J'ai documenté l'application grâce à JsDoc, en me penchant principalement sur les fonctions et objets les plus complexes à comprendre. 
 
-En parallèle j'ai modifié le contenu des README.md pour encore une fois facilité la compréhension de l'application sur le GitHub
+En parallèle j'ai modifié le contenu des README.md pour encore une fois faciliter la compréhension de l'application sur le GitHub.
 
 ### Fichier modèle pour la configuration
 
-À l'instar des fichiers model.api.config.json et model.pathToCert.json pour l'api, j'ai créé un fichier modèle [model.app.config.json](https://raw.githubusercontent.com/infogeo54/CartoGIS54/master/src/model.app.config.json) afin de remplir correctement le fichier de configuration.
+À l'instar des fichiers model.api.config.json et model.pathToCert.json pour l'API, j'ai créé un fichier modèle [model.app.config.json](https://raw.githubusercontent.com/infogeo54/CartoGIS54/master/src/model.app.config.json) afin de remplir correctement le fichier de configuration.
 
 ### Mise à jour du guide d'utilisation
 Hugo avait rédigé un guide complet pour le service SIG, concernant l'installation et la configuration de CartoGIS54, ainsi que l'utilisation du plugin etc. J'ai ainsi mis à jour les informations tout en ajoutant les parties que j'avais développé comme fileAPI.
 
-
-
 ### Passation de pouvoir
 Rodolphe Drouet, qui était stagiaire, a été pris en alternance au SIG, l'année prochaine. Il va ainsi continuer le travail qu'il a effectué durant son stage (principalement le plugin QGIS), ainsi que CartoGIS54 et fileAPI.
 
-Nous avons donc réussi à organiser un RDV pour que je puisse lui expliquer le fonctionnement des 2 applications, les fonctionnalités que j'ai implémentées ainsi que celles qui restent à implémenter. Parmi elles :
+Nous avons donc réussi à organiser un rendez-vous pour que je puisse lui expliquer le fonctionnement des 2 applications, les fonctionnalités que j'ai implémentées ainsi que celles qui restent à ajouter. Parmi elles :
 - Un système d'onglets dans la fiche descriptive,
 - Le filtrage dans la requête du webservice, pour ne charger que les objets qui seront affichables,
-- La gestion des erreurs depuis fileAPI, pour l'instant il s'agit seulement de message dans la console,
+- La gestion des erreurs depuis fileAPI, pour l'instant il s'agit seulement de message dans la console.

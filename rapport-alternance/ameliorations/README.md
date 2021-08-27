@@ -59,6 +59,7 @@ __Demo du plugin__ :
 <iframe width="100%" style="min-height:30rem;" src="https://leaflet.github.io/Leaflet.Editable/example/index.html"></iframe>
 
 __Problème intermédiaire__ : Coordonnées dupliquées
+
 Lorsque l’on sauvegarde un objet, la première coordonnée est dupliquée ce qui nous fait 2 points se superposant (cela se produisant à chaque sauvegarde). 
 
 PostGIS considère en polygone valide que si la première coordonnée est identique à la dernière (pour pouvoir refermer la forme), contrairement Leaflet qui n’ayant pas besoin de ce doublon le considère comme un autre point. 
@@ -89,7 +90,7 @@ get coordinates () {
 ## Ligne brisée (Polyline)
 L’application ne prenait en compte que les objets de type point (marker) et polygone.
 
-L’implémentation de lignes brisées pour par exemple des routes ou des lignes électriques ou internet était indispensable. Je me suis basé sur ce qui avait été déjà fait pour les polygones et je l'ai adapté aux polylignes que ce soit du côté Leaflet que pour la structure de la requête vers PostGIS.
+L’implémentation de lignes brisées pour, par exemple des routes ou des lignes électriques ou internet, était indispensable. Je me suis basé sur ce qui avait été déjà fait pour les polygones et je l'ai adapté aux polylignes que ce soit du côté Leaflet que pour la structure de la requête vers PostGIS.
 
 Je vais me permettre le néologisme `polyligne` à partir de l’anglais `polyline` (à l'instar de _polygon_ pour  _polygone_) pour désigner les lignes brisées.
 
@@ -111,10 +112,16 @@ __Demo du plugin__ :
 <iframe width="100%" style="min-height:30rem;" src="https://prominentedge.com/leaflet-measure-path/"></iframe>
 
 #### Mesure rapide
-Pour les outils de mesures rapides, j’ai créé un nouveau module dans le store de VueJs nommé `quickMeasure` qui stocke l’objet Leaflet en construction, les méthodes pour ajouter, modifier et supprimer les sommets de l’objet ainsi que le type d’objet qui est initialisé par ce bouton Image du bouton. Les mesures sont affichées avec le plugin `Leaflet Measure Path` et l’objet est modifiable grâce au plugin `Editable`.
+Pour les outils de mesures rapides, j’ai créé un nouveau module dans le store de VueJs nommé `quickMeasure` qui stocke l’objet Leaflet en construction, les méthodes pour ajouter, modifier et supprimer les sommets de l’objet ainsi que le type d’objet qui est initialisé par ce bouton.
 
 
-#### Remplissage automatiques des champs
+![bouton quickmeasure](../assets/img/bouton_quickmeasure.png)
+<p style="text-align:center;">Bouton quickMeasure, avec changement au survol</p>
+
+Les mesures sont affichées avec le plugin `Leaflet Measure Path` et l’objet est modifiable grâce au plugin `Editable`.
+
+
+#### Remplissage automatique des champs
 Pour le remplissage automatique des champs, la méthode updateMeasurements est appelée à chaque modification de la géométrie d’un objet et fait la mise à jour automatique des champs aire et périmètre ou distance.
 
 -	Le périmètre est calculé grâce aux méthodes `accumulatedLengths` et `length` du plugin [`Leaflet.GeometryUtil`](https://github.com/makinacorpus/Leaflet.GeometryUtil)
@@ -143,7 +150,7 @@ On regarde ceux qui ont un attribut `rôle` qui correspond au rôle du champ. Po
 - `distance` pour le calcul de distance ou de longueur. 
 
 </div>
-Puis on appelle le getter correspond au rôle sur l'attribut de la fiche descriptive auxquelles le rôle a été assigné.
+Puis on appelle le getter correspond au rôle sur l'attribut de la fiche descriptive auquel le rôle a été assigné.
 
 ```javascript
 _updateByRole(role){
@@ -257,7 +264,7 @@ Deux options s’offrent à moi :
 - ou le stockage dans un dossier local.
 
 Après des recherches et après en avoir discuté avec mes collègues, j’arrive à un dilemme : 
-- D'un côté, le stockage en BDD pose des problèmes de sécurité, de performances et de capacité de stockages car il s'agit de fichiers binaires assez lourd sde type `Blob` (comparé à des champs `text` ou `int`). 
+- D'un côté, le stockage en BDD pose des problèmes de sécurité, de performances et de capacité de stockage car il s'agit de fichiers binaires assez lourds de type `Blob` (comparé à des champs `text` ou `int`). 
 - De l'autre, étant donné que l'application est en `VueJs` et que `JavaScript` ne permet pas la modification des fichiers et de dossiers en local pour (encore une fois) des problèmes de sécurité, je suis aussi bloqué même si cette solution est privilégiée par mes collègues.
 
 En continuant mes recherches je découvre le module `fs` (pour file-system) de `NodeJS`, qui permet la gestion de fichiers et dossiers à partir d’une application `Node`, puis je fais la connaissance d’`Express`, un Framework d’API pour NodeJS. Je décide donc de créer une API REST qui stocke les fichiers et images dans une arborescence précise de dossiers, avec laquelle l'application CartoGIS54 pourra communiquer.

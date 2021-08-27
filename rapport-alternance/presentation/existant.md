@@ -32,7 +32,7 @@ Les objets sont affichés selon le style défini dans le projet QGIS, c'est-à-d
 Chaque objet possède une liste d'attributs qui est définie dans le projet QGIS et qui sert à décrire cet objet. Prenons l'exemple d'un commerce : on pourrait avoir un attribut nom, un attribut horaires d'ouverture, etc. On peut consulter cette liste via l'application sous la forme d'un formulaire qui s'affichera sur la droite de l'application et que l'on a nommé "fiche descriptive". Cette fiche peut être ainsi consultée et remplie.
 
 Afin de pouvoir ajouter un nouvel objet, nous devons sélectionner le type d'objet souhaité. Pour cela, nous sélectionnons dans la liste de couches à gauche de l'application celle que nous souhaitons. Au clic, les différents types d'objets de la couche apparaissent (avec pour les objets ponctuels leur marqueur personnalisé s’ils en ont un). Après avoir sélectionné le type souhaité, nous pouvons le positionner sur la carte Leaflet :
-- Pour les objets ponctuels, il suffit de cliquer un fois à l'endroit souhaité pour le placer.
+- Pour les objets ponctuels, il suffit de cliquer une fois à l'endroit souhaité pour le placer.
 - Pour les polygones, lorsque nous cliquons, nous ajoutons un sommet à notre polygone. Cependant il n'y a pas moyen de modifier la forme (seulement d'ajouter des sommets à partir du dernier posé). 
 
 La fiche descriptive apparait après un clic pour pouvoir être remplie.
